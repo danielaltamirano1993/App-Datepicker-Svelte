@@ -1,0 +1,25 @@
+language: node_js
+node_js:
+  - "10"
+jobs:
+  include:
+    - script: npm install
+    - script: npm run build
+      deploy:
+        - provider: pages
+          skip_cleanup: true
+          token: $GITHUB_OAUTH_TOKEN
+          local_dir: ./dist
+          keep_history: true
+          edge: true
+          on:
+            tags: false
+        - provider: releases
+          api_key: $GITHUB_OAUTH_TOKEN
+          file:
+            - "./dist/build/date-picker.js"
+            - "./dist/build/date-picker.mjs"
+            - "./dist/build/date-picker.css"
+          skip_cleanup: true
+          on:
+            tags: true
