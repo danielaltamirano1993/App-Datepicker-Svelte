@@ -1,0 +1,43 @@
+{
+  "name": "svelte-generic-datepicker",
+  "version": "0.0.10",
+  "description": "<date-picker> Web-component or svelte component",
+  "svelte": "src/index.js",
+  "module": "dist/build/date-picker.mjs",
+  "main": "dist/build/date-picker.js",
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "webcomponent",
+    "svelte",
+    "datepicker",
+    "self-contained",
+    "styled",
+    "clean code",
+    "easy",
+    "flexible",
+    "<date-picker/>"
+  ],
+  "author": "Ivo Bozic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ivosdc/svelte-datepicker/issues"
+  },
+  "homepage": "https://github.com/ivosdc/svelte-datepicker",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivosdc/svelte-datepicker.git"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^6.0.0",
+    "rollup": "^1.20.0",
+    "rollup-plugin-svelte": "^6.1.1",
+    "svelte": "^3.35.0"
+  },
+  "files": [
+    "src",
+    "dist"
+  ]
+}
