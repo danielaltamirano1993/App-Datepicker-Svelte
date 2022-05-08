@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width,initial-scale=1'>
+    <title>Ivolution.one svelte-generic-datepicker</title>
+    <link rel='stylesheet' href='build/date-picker.css'>
+    <script type='module' src='build/date-picker.mjs'></script>
+</head>
+
+<body>
+<h1>&lt;date-picker&gt;&lt;/date-picker&gt;</h1>
+<p>Agnostic web-component for date selection.</p>
+<span style="background-color: #dddddd; padding: 0.4em; display:inline-block">&gt; npm install svelte-generic-datepicker</span>
+<p></p>
+<hr>
+<div class="nolinebreak">
+    <span class="datepicker">Select date:</span>
+    <div>
+        <date-picker></date-picker>
+    </div>
+</div>
+<hr>
+</span style="text-align: right"><a href="https://ivolution.one">ivolution.one product - MIT License</a>
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7V5M288MUT7GE&source=url">donate
+</a></p>
+</body>
+<script>
+    let datePicker = document.querySelector('date-picker');
+    datePicker.setAttribute('locale', 'en-EN');
+</script>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        font-size: 0.9em;
+        height: 300px;
+    }
+</style>
+</html>
