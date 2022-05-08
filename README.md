@@ -8,8 +8,6 @@
 
 `npm install svelte-generic-datepicker`
 
-[![Donate](https://github.com/ivosdc/svelte-datepicker/raw/master/assets/donate.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7V5M288MUT7GE&source=url)
-
 # Usage
 
 Import the component.
